@@ -15,3 +15,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import { initSelect2 } from '../components/select2';
+import { toggleForm } from '../components/toggle_form';
+
+document.addEventListener("turbolinks:load", function() {
+  initSelect2();
+  toggleForm();
+});
